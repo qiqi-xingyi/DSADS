@@ -1,0 +1,13 @@
+python predict.py --config ./configs/deeplabv3p/deeplabv3p_resnet101_os8_cityscapes_1024x512_80k.yml --model_path ./models/pretrained.pdparams  --image_path ./data/berlin --save_dir ./output/result
+
+python export.py  --config configs\deeplabv3p\deeplabv3p_resnet101_os8_cityscapes_1024x512_80k.yml   --model_path models/pretrained.pdparams
+
+python paddleseg/check.py --config configs\deeplabv3p\deeplabv3p_resnet101_os8_cityscapes_1024x512_80k.yml
+
+
+export CUDA_VISIBLE_DEVICES=0
+
+
+python predict.py  --config  ./configs/deeplabv3p/deeplabv3p_resnet101_os8_cityscapes_1024x512_80k.yml  --model_path  ./models/model2.pdparams   --image_path  ./data/room/shiyanshi.jpg  --save_dir  ./output/result
+
+from fluid.average import eval

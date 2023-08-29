@@ -1,0 +1,31 @@
+#pushButton_1{
+    border-radius:30px;
+    border-image:url(./img/detect4.jpg);
+    background-origin: content;
+    background-repeat: no-repeat;
+}
+#pushButton_2{
+    border-radius:30px;
+    border-image:url(./img/record2.jpg);
+    background-origin: content;
+    background-repeat: no-repeat;
+}
+#pushButton_3{
+    border-radius:30px;
+    border-image: url(./img/settings.png);
+    background-origin: content;
+    background-repeat: no-repeat;
+}
+#pushButton_4{
+    border-radius:30px;
+    border-image: url(./img/close.jpg);
+    background-origin: content;
+    background-repeat: no-repeat;
+}
+#lineEdit{
+    background:transparent;
+    border:0px ;
+}
+#label_2{
+    color:#FF9933;
+}
